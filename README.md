@@ -1,4 +1,4 @@
-# claude-skills
+# my-skills
 
 자주 쓰는 [Claude 스킬](https://docs.claude.com/en/docs/claude-code/skills)을 모아두는 개인 저장소입니다.
 새로 만든 스킬을 하나씩 추가해 나갑니다.
@@ -25,10 +25,10 @@
 
 ```bash
 # 개인 스킬로 적용 (예: prd-writer)
-ln -s ~/workspace/my-skills/claude-skills/prd-writer ~/.claude/skills/prd-writer
+ln -s ~/workspace/my-skills/prd-writer ~/.claude/skills/prd-writer
 
 # 또는 프로젝트 스킬로 적용
-ln -s ~/workspace/my-skills/claude-skills/prd-writer <프로젝트>/.claude/skills/prd-writer
+ln -s ~/workspace/my-skills/prd-writer <프로젝트>/.claude/skills/prd-writer
 ```
 
 복사해서 쓰고 싶다면 `cp -r prd-writer ~/.claude/skills/` 처럼 디렉터리째 복사해도 됩니다.
@@ -47,7 +47,7 @@ ln -s ~/workspace/my-skills/claude-skills/prd-writer <프로젝트>/.claude/skil
 각 스킬은 자기 이름의 디렉터리 하나를 가지며, 최소한 `SKILL.md`를 포함합니다.
 
 ```
-claude-skills/
+my-skills/
 ├── README.md
 └── <skill-name>/
     ├── SKILL.md          # 스킬 본문 (frontmatter + 작성 절차)
